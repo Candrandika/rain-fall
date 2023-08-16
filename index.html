@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindari Hujan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="#" id="home" onsubmit="init()">
+            <h1 class="title">HINDARI HUJAN</h1>
+            <div class="player-name">
+                <input type="text" id="player_name" class="form-control" placeholder="Nama Pemain 1" required>
+                <input type="text" id="enemy_name" class="form-control" placeholder="Nama Pemain 2" required>
+            </div>
+            <div class="htp">
+                <h4>Cara Bermain:</h4>
+                <ol>
+                    <li>Mainkanlah permainan bersama temanmu!</li>
+                    <li>Hindarilah hujan yang jatuh. Jika terkena hujan, maka kamu akan kalah.</li>
+                </ol>
+                <h4>Kontrol Pemain 1:</h4>
+                <ul>
+                    <li>A untuk bergerak ke kiri.</li>
+                    <li>D untuk bergerak ke kanan.</li>
+                </ul>
+                <h4>Kontrol Pemain 2:</h4>
+                <ul>
+                    <li>Panah kiri untuk bergerak ke kiri.</li>
+                    <li>Panah kanan untuk bergerak ke kanan.</li>
+                </ul>
+            </div>
+            <button type="submit" class="btn">Mulai!</button>
+        </form>
+        <div id="end">
+            <div>
+                <div id="winner"></div>
+                <button class="btn mt-1" onclick="init()">Main Lagi!</button>
+                <button class="btn mt-1" onclick="main()">Kembali ke home</button>
+            </div>
+        </div>
+        <canvas id="game"></canvas>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
